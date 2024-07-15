@@ -68,7 +68,7 @@ export class SsmStack extends NestedStack {
         dataType: ParameterDataType.TEXT,
         tier: ParameterTier.STANDARD,
         parameterName: `/${envName}/${appName}/cognito/user-pool/domain`,
-        stringValue: `https://${props.userPoolDomain}.auth.us-east-1.amazoncognito.com`
+        stringValue: `https://${props.userPoolDomain}.auth.ca-central-1.amazoncognito.com`
       }
     );
 

@@ -10,7 +10,7 @@ const appName = app.node.tryGetContext("CDK_APP");
 new MainStack(app, 'MainStack', {
   env: {
     account: accountId,
-    region: "us-east-1"
+    region: "ca-central-1"
   },
   tags: {
     Environment: envName,

@@ -40,7 +40,7 @@ export class LambdaStack extends NestedStack {
         functionName: `${envName}-${appName}-default-handler`,
         handler: "app.lambdaHandler",
         architecture: Architecture.X86_64,
-        runtime: Runtime.NODEJS_16_X,
+        runtime: Runtime.NODEJS_20_X,
         memorySize: 128,
         role: props.role,
         code: Code.fromAsset(
@@ -73,7 +73,7 @@ export class LambdaStack extends NestedStack {
         functionName: `${envName}-${appName}-callback-handler`,
         handler: "app.lambdaHandler",
         architecture: Architecture.X86_64,
-        runtime: Runtime.NODEJS_16_X,
+        runtime: Runtime.NODEJS_20_X,
         memorySize: 128,
         role: props.role,
         code: Code.fromAsset(
